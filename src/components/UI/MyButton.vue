@@ -20,6 +20,7 @@ export default {
     font-family: 'Montserrat';
     font-style: normal;
     font-size: 14px;
+    font-weight: 700;
     line-height: 10px;
     letter-spacing: 0.05em;
     color: #FFFFFF;

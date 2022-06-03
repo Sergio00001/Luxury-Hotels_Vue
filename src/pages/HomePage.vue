@@ -8,17 +8,33 @@
             </div>
         </div>
     </div>
+    <div class="home_page__body">
+        <div class="container">
+            <HomeBody />
+        </div>
+    </div>
+    <div class="home_page__footer">
+        <div class="container">
+            <Footer />
+        </div>
+    </div>
 </template>
 
 <script>
 import TopText from '@/components/TopText'
 import Navbar from '@/components/Navbar'
 import TopFooter from '@/components/TopFooter'
+import HomeBody from '@/components/HomePage/HomeBody'
+import Footer from '@/components/Footer'
 
 
 export default {
     components: {
-        Navbar, TopText, TopFooter
+        Navbar,
+        TopText,
+        TopFooter,
+        HomeBody,
+        Footer
     }
 }
 </script>
@@ -29,6 +45,15 @@ export default {
     background-repeat: no-repeat;
     background-size: 100vw auto;
     height: 100vh;
+}
+
+.home_page__footer {
+    background-image: url("@/assets/Footer/footer-block.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    position: absolute;
+    width: 100vw;
 }
 
 .header {

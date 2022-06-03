@@ -1,9 +1,9 @@
 <template>
-    <div class="home_page__body">
-        <h3 class="body__welcome">WELCOME TO</h3>
-        <h1 class="body__luxury">LUXURY</h1>
-        <h2 class="body__hotels">HOTELS</h2>
-        <p class="body__text">Book your stay and enjoy Luxury
+    <div class="top_text">
+        <h3 class="text__welcome">WELCOME TO</h3>
+        <h1 class="text__luxury">LUXURY</h1>
+        <h2 class="text__hotels">HOTELS</h2>
+        <p class="text__text">Book your stay and enjoy Luxury
             redefined at the most affordable rates.</p>
     </div>
 </template>
@@ -16,12 +16,12 @@ export default {
 </script>
 
 <style scoped>
-.home_page__body {
+.top_text {
     text-align: start;
     margin-top: 70px;
 }
 
-.body__welcome {
+.text__welcome {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -30,7 +30,7 @@ export default {
     color: #ffff;
 }
 
-.body__luxury {
+.text__luxury {
     font-family: 'Adobe Garamond Pro';
     font-style: normal;
     font-weight: 700;
@@ -40,7 +40,7 @@ export default {
     color: #FFFFFF;
 }
 
-.body__hotels {
+.text__hotels {
     font-family: 'Adobe Garamond Pro';
     font-style: normal;
     font-weight: 700;
@@ -50,7 +50,7 @@ export default {
     color: #FFFFFF;
 }
 
-.body__text {
+.text__text {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;

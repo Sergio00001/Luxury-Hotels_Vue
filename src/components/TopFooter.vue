@@ -34,7 +34,6 @@ export default {
 
 .btn__booking {
     width: 200px;
-    font-weight: 700;
 }
 
 .booking__img {
