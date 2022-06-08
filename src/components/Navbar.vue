@@ -4,9 +4,9 @@
             <img class="nav__img" src="@/assets/HomePage/logo.png" alt="logo">
         </div>
         <div class="nav__menu">
-            <a href="#" class="nav__link">Home</a>
-            <a href="#" class="nav__link">Facilities</a>
-            <a href="#" class="nav__link">Rooms</a>
+            <a @click.prevent="$router.push('/')" class="nav__link">Home</a>
+            <a @click.prevent="$router.push('/facilities')" class="nav__link">Facilities</a>
+            <a @click.prevent="$router.push('/rooms')" class="nav__link">Rooms</a>
             <a href="#" class="nav__link">Contact-us</a>
         </div>
     </div>

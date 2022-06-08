@@ -1,22 +1,20 @@
 <template>
     <div class="home_page__top">
-        <div class="header">
-            <div class="container">
+        <div class="top__background">
+            <my-container>
                 <Navbar />
                 <TopText />
                 <TopFooter />
-            </div>
+            </my-container>
         </div>
     </div>
-    <div class="home_page__body">
-        <div class="container">
-            <HomeBody />
-        </div>
-    </div>
+    <my-container>
+        <HomeBody />
+    </my-container>
     <div class="home_page__footer">
-        <div class="container">
+        <my-container>
             <Footer />
-        </div>
+        </my-container>
     </div>
 </template>
 
@@ -54,9 +52,10 @@ export default {
     background-position: bottom;
     position: absolute;
     width: 100vw;
+    height: 250px;
 }
 
-.header {
+.top__background {
     background-image: url("@/assets/HomePage/background_shadow.png");
     background-repeat: no-repeat;
     background-size: 100vw auto;

@@ -55,5 +55,6 @@ export default {
 
 .scroll__btn {
     width: 40px;
+    cursor: pointer;
 }
 </style>
