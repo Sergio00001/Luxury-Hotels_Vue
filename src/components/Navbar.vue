@@ -7,7 +7,7 @@
             <a @click.prevent="$router.push('/')" class="nav__link">Home</a>
             <a @click.prevent="$router.push('/facilities')" class="nav__link">Facilities</a>
             <a @click.prevent="$router.push('/rooms')" class="nav__link">Rooms</a>
-            <a href="#" class="nav__link">Contact-us</a>
+            <a @click.prevent="$router.push('/contacts')" href="#" class="nav__link">Contact-us</a>
         </div>
     </div>
 </template>
@@ -41,11 +41,12 @@ export default {
     font-weight: 400;
     font-size: 15px;
     color: #ffff;
+    cursor: pointer;
 }
 
 .nav__link:hover {
     border-bottom: 2px solid #ffff;
-    transition: all 0.2s;
+    transition: border-bottom 0.2s;
 }
 
 .nav__link:active {

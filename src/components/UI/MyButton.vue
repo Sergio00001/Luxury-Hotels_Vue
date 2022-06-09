@@ -29,6 +29,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all ease-in 0.2s;
 }
 
 .btn:hover {

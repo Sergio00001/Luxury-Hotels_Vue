@@ -7,13 +7,20 @@
     </div>
     <div class="home_page__footer">
         <p class="footer__text">Scroll</p>
-        <div><img class="scroll__btn" src="@/assets/HomePage/scroll.png" alt="scroll"></div>
+        <div><img class="scroll__btn" @click.prevent="scrolling" src="@/assets/HomePage/scroll.png" alt="scroll"></div>
     </div>
 </template>
 
 <script>
 export default {
-
+    methods: {
+        scrolling() {
+            document.documentElement.scrollTo({
+                top: 722,
+                behavior: 'smooth'
+            })
+        }
+    }
 }
 </script>
 

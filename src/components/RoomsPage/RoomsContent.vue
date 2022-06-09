@@ -6,10 +6,10 @@
         </div>
         <div class="details__bottom">
             <div class="dropdown">
-                <a href="#" class="details__link" @click.prevent="changeDropStatus"><img
-                        :class="{ 'active__dropdown': dropStatus === true }" class="details__dropdown"
+                <a href="#" class="details__link" @click.prevent="changeDropOneStatus"><img
+                        :class="{ 'active__dropdown': dropStatusOne === true }" class="details__dropdown"
                         src="@/assets/RoomsPage/open-dropdown.png" alt="drop"> VIEW ROOM DETAILS</a>
-                <ul class="dropdown__list" :class="{ 'dropdown__list_active': dropStatus === true }" v-if="dropStatus">
+                <ul class="dropdown__list" v-if="dropStatusOne">
                     <li class="dropdown__item">
                         <my-text>A room assigned to one person.</my-text>
                     </li>
@@ -32,10 +32,10 @@
         </div>
         <div class="details__bottom">
             <div class="dropdown">
-                <a href="#" class="details__link" @click.prevent="changeDropStatus"><img
-                        :class="{ 'active__dropdown': dropStatus === true }" class="details__dropdown"
+                <a href="#" class="details__link" @click.prevent="changeDropTwoStatus"><img
+                        :class="{ 'active__dropdown': dropStatusTwo === true }" class="details__dropdown"
                         src="@/assets/RoomsPage/open-dropdown.png" alt="drop"> VIEW ROOM DETAILS</a>
-                <ul class="dropdown__list" :class="{ 'dropdown__list_active': dropStatus === true }" v-if="dropStatus">
+                <ul class="dropdown__list" v-if="dropStatusTwo">
                     <li class="dropdown__item">
                         <my-text>A room assigned to two people.</my-text>
                     </li>
@@ -57,10 +57,10 @@
         </div>
         <div class="details__bottom">
             <div class="dropdown">
-                <a href="#" class="details__link" @click.prevent="changeDropStatus"><img
-                        :class="{ 'active__dropdown': dropStatus === true }" class="details__dropdown"
+                <a href="#" class="details__link" @click.prevent="changeDropThreeStatus"><img
+                        :class="{ 'active__dropdown': dropStatusThree === true }" class="details__dropdown"
                         src="@/assets/RoomsPage/open-dropdown.png" alt="drop"> VIEW ROOM DETAILS</a>
-                <ul class="dropdown__list" :class="{ 'dropdown__list_active': dropStatus === true }" v-if="dropStatus">
+                <ul class="dropdown__list" v-if="dropStatusThree">
                     <li class="dropdown__item">
                         <my-text>A room with two twin beds.</my-text>
                     </li>
@@ -84,18 +84,34 @@ export default {
 
     data() {
         return {
-            dropStatus: false
+            dropStatusOne: false,
+            dropStatusTwo: false,
+            dropStatusThree: false
         }
     },
 
     components: { RoomsCarousel },
 
     methods: {
-        changeDropStatus() {
-            if (this.dropStatus === false) {
-                this.dropStatus = true
+        changeDropOneStatus() {
+            if (this.dropStatusOne === false) {
+                this.dropStatusOne = true
             } else {
-                this.dropStatus = false
+                this.dropStatusOne = false
+            }
+        },
+        changeDropTwoStatus() {
+            if (this.dropStatusTwo === false) {
+                this.dropStatusTwo = true
+            } else {
+                this.dropStatusTwo = false
+            }
+        },
+        changeDropThreeStatus() {
+            if (this.dropStatusThree === false) {
+                this.dropStatusThree = true
+            } else {
+                this.dropStatusThree = false
             }
         }
     }

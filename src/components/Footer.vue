@@ -74,6 +74,7 @@ export default {
     font-weight: 400;
     font-size: 15px;
     line-height: 20px;
+    transition: all ease-in 0.2s;
 }
 
 .footer__link:hover {
