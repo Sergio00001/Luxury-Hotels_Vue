@@ -361,6 +361,15 @@ export default {
     .carousel__control {
         bottom: -159px;
     }
+
+    .control__img {
+        width: 10px;
+        height: 10px;
+    }
+
+    .active__control {
+        background-size: 10px 10px;
+    }
 }
 
 /* Rooms Details */
