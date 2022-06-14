@@ -44,6 +44,10 @@ export default {
     margin-bottom: 200px;
 }
 
+.contact__info {
+    margin-right: 15px;
+}
+
 .top__text {
     color: #14274A;
     font-size: 22px;
@@ -89,6 +93,7 @@ export default {
 }
 
 .form__input {
+    margin-right: 10px;
     width: 450px;
     height: 50px;
     border: 2px solid rgba(20, 39, 74, 0.5);
@@ -107,5 +112,25 @@ export default {
 .form__btn {
     margin-left: 75%;
     width: 100px;
+}
+
+@media(max-width: 930px) {
+    .content__center {
+        flex-direction: column;
+    }
+
+    .form__btn {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 490px) {
+    .form__input {
+        width: 100%;
+    }
+
+    .info__text {
+        font-size: 22px;
+    }
 }
 </style>

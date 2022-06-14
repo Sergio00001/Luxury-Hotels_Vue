@@ -23,11 +23,6 @@ export default {
     }
 }
 
-@media(max-width: 1000px) {
-    .container {
-        max-width: 70%;
-    }
-}
 
 @media(max-width: 769px) {
     .container {

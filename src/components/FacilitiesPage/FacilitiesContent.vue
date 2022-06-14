@@ -72,7 +72,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 59%;
+    margin-top: 60%;
 }
 
 .poolside {
@@ -85,5 +85,11 @@ export default {
 
 .swimming_pool {
     margin-top: 50%;
+}
+
+@media (max-width: 1200px) {
+    .service__discription {
+        top: 59px;
+    }
 }
 </style>

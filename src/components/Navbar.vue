@@ -44,6 +44,10 @@ export default {
     cursor: pointer;
 }
 
+.nav__link:last-child {
+    margin-right: 0;
+}
+
 .nav__link:hover {
     border-bottom: 2px solid #ffff;
     transition: border-bottom 0.2s;
@@ -51,5 +55,52 @@ export default {
 
 .nav__link:active {
     font-weight: 700;
+}
+
+/* adaptive for computers */
+@media(min-width: 1300px) {
+    .nav__link {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+}
+
+/* adaptive for tablets */
+
+@media (min-width: 376px) and (max-width: 999px) {
+    .nav__link {
+        margin-right: 15px;
+        font-size: 12px;
+    }
+
+    .nav__img {
+        width: 100px;
+        height: 55px;
+    }
+}
+
+@media (max-width: 375px) {
+    .nav__img {
+        width: 65px;
+        height: 40px;
+    }
+
+    .nav__link {
+        margin-right: 15px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 320px) {
+    .nav__link {
+        margin-right: 13px;
+        font-size: 10px;
+    }
+
+    .nav__img {
+        width: 55px;
+        height: 35px;
+    }
 }
 </style>

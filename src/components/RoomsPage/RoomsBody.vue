@@ -5,13 +5,13 @@
         comfort isn’t our only objective, we also value good design, sleek contemporary furnishing complemented
         by the rich tones of nature’s palette as visible from our rooms’ sea-view windows and terraces.
     </my-text>
-    <RoomsContent />
+    <RoomsCarousel />
 </template>
 
 <script>
-import RoomsContent from '@/components/RoomsPage/RoomsContent'
+import RoomsCarousel from '@/components/RoomsPage/RoomsCarousel'
 export default {
-    components: { RoomsContent }
+    components: { RoomsCarousel }
 }
 </script>
 
@@ -25,8 +25,14 @@ export default {
 .text {
     text-align: center;
     margin: 0 auto;
-    width: 965px;
+    max-width: 965px;
     margin-bottom: 60px;
     color: #14274A;
+}
+
+@media (max-width: 1400px) {
+    .text {
+        max-width: 800px;
+    }
 }
 </style>

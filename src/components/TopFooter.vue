@@ -64,4 +64,47 @@ export default {
     width: 40px;
     cursor: pointer;
 }
+
+/* adaptive for computers */
+@media(min-width: 1200px) {
+    .home_page__btn {
+        margin-top: 100px;
+    }
+}
+
+@media(min-width: 1000px) {
+    .home_page__btn {
+        margin-top: 40px;
+    }
+
+    .footer__text {
+        margin-top: 20px;
+    }
+
+    .scroll__btn {
+        width: 35px;
+    }
+
+    .btn__booking {
+        width: 180px;
+    }
+}
+
+@media (max-width: 999px) {
+    .home_page__btn {
+        margin-top: 50px;
+    }
+
+    .btn__booking {
+        width: 170px;
+    }
+
+    .scroll__btn {
+        width: 35px;
+    }
+
+    .footer__text {
+        margin-top: 15px;
+    }
+}
 </style>

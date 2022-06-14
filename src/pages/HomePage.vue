@@ -39,4 +39,10 @@ export default {
 .background {
     background-image: url("@/assets/HomePage/home_background.png");
 }
+
+@media (max-width: 700px) {
+    .background {
+        background-image: url('@/assets/HomePage/home-small-background.jpg');
+    }
+}
 </style>

@@ -28,7 +28,7 @@ export default {
 .text {
     text-align: center;
     margin: 0 auto;
-    width: 965px;
+    max-width: 965px;
     margin-bottom: 60px;
     color: #14274A;
 }

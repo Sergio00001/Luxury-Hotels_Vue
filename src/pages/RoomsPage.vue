@@ -38,4 +38,10 @@ export default {
 .background {
     background-image: url('@/assets/RoomsPage/rooms-background.png');
 }
+
+@media (max-width: 700px) {
+    .background {
+        background-image: url('@/assets/RoomsPage/rooms-small-background.jpg');
+    }
+}
 </style>

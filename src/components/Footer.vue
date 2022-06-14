@@ -13,12 +13,15 @@
             <div class="contact info page"><a href="#" class="footer__link">Contact</a></div>
             <div class="terms_n_conditions info page"><a href="#" class="footer__link">Terms & Conditions</a></div>
         </div>
-        <div class="footer__block">
+        <div class="footer__block_social">
+            <div class="footer__logo_mobile"><img class="footer__img" src="@/assets/Footer/footer-logo.png" alt="logo">
+            </div>
             <div class="facebook page"><a href="#" class="social__link facebook__link"><img
                         src="@/assets/Footer/facebook-logo.png" alt="facebook"></a><a href="#"
                     class="footer__link facebook__link">Facebook</a></div>
-            <div class="twitter page"><a href="#" class="social__link"><img src="@/assets/Footer/twitter-logo.png"
-                        alt="twitter"></a><a href="#" class="footer__link">Twitter</a></div>
+            <div class="twitter page"><a href="#" class="social__link twitter__link"><img class="twitter__img"
+                        src="@/assets/Footer/twitter-logo.png" alt="twitter"></a><a href="#"
+                    class="footer__link">Twitter</a></div>
             <div class="instagram page"><a href="#" class="social__link"><img src="@/assets/Footer/instagram-logo.png"
                         alt="instagram"></a><a href="#" class="footer__link">Instagram</a></div>
         </div>
@@ -50,6 +53,11 @@ export default {
 }
 
 .footer__block {
+    padding-bottom: 40px;
+    padding-top: 90px;
+}
+
+.footer__block_social {
     padding-bottom: 40px;
     padding-top: 90px;
 }
@@ -147,8 +155,76 @@ export default {
     height: 20px;
 }
 
+.footer__logo_mobile {
+    display: none;
+}
+
 .submit__btn:hover {
     background: #daab54;
     transition: all ease-in 0.2s;
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+    .footer__text {
+        width: 153px;
+    }
+
+    .email__input {
+        width: 150px;
+        padding-left: 10px;
+    }
+}
+
+@media (min-width: 650px) and (max-width: 900px) {
+    .email__form {
+        display: none;
+    }
+
+    .subscribe {
+        display: none;
+    }
+}
+
+@media (max-width: 650px) {
+    .email__form {
+        display: none;
+    }
+
+    .footer__block {
+        display: none;
+    }
+
+    .footer__block_social {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+    .social__link {
+        padding-bottom: 0px;
+    }
+
+    .footer__link {
+        padding-right: 10px;
+    }
+
+    .footer__logo_mobile {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .facebook__link {
+        padding-bottom: 10px;
+    }
+
+    .twitter__link {
+        padding-bottom: 10px;
+    }
+
+    .twitter__img {
+        padding-right: 20px;
+    }
 }
 </style>

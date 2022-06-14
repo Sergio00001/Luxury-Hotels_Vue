@@ -52,4 +52,10 @@ export default {
     width: 100vw;
     height: 250px;
 }
+
+@media (max-width: 490px) {
+    .contacts__header {
+        font-size: 40px;
+    }
+}
 </style>

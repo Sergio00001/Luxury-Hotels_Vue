@@ -38,4 +38,10 @@ export default {
 .background {
     background-image: url("@/assets/FacilitiesPage/facilities-background.png");
 }
+
+@media (max-width: 700px) {
+    .background {
+        background-image: url('@/assets/FacilitiesPage/facilities-small-background.jpg');
+    }
+}
 </style>
